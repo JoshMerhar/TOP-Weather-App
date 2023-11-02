@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "robotoregular";
+    src:
+      url("./Font/roboto-regular-webfont.woff2") format("woff2"),
+      url("./Font/roboto-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+  
+* {
+    box-sizing: border-box;
+    font-family: "robotoregular", "Lucida Sans", "Lucida Sans Regular",
+      "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: darkcyan;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 90vw;
+    margin: auto;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#search,
+#submit-search {
+    font-size: 24px;
+}
+
+.weather-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.current-weather-container {
+    display: flex;
+    gap: 20px;
+}
+
+.conditions-container {
+    display: flex;
+    flex-direction: column;
+}

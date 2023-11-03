@@ -8,9 +8,17 @@
 </head>
 <body>
     <div class="container">
+        <div class="page-title-container">
+            <div id="page-title">The Weather Right Now</div>
+        </div>
         <div class="search-container">
-            <input type="search" id="search" placeholder="Search for a city">
-            <button id="submit-search">Search</button>
+            <div class="search-bar-container">
+                <input type="search" id="search" placeholder="Search for a city">
+                <button id="submit-search">Search</button>
+            </div>
+            <div class="error-container">
+                <div id="error">Error: City not found!</div>
+            </div>
         </div>
         <div class="weather-info-container">
             <div id="location"></div>

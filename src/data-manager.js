@@ -17,7 +17,7 @@ export const dataManager = (function () {
             return weatherData;
         } catch (error) {
             console.log(error.response);
-            return alert('City not found. Are you sure that\'s a real place?');
+            return;
         }
     }
 
@@ -38,7 +38,6 @@ export const dataManager = (function () {
                 windDir: weatherData.current.wind_dir,
             }
         }
-        console.log(currentWeather);
         return currentWeather;
     }
 

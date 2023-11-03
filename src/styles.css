@@ -25,7 +25,20 @@ body {
     margin: auto;
 }
 
-.search-container {
+.page-title-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 4px solid skyblue;
+}
+
+#page-title {
+    font-size: 42px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.search-bar-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +48,18 @@ body {
 #search,
 #submit-search {
     font-size: 24px;
+}
+
+.error-container {
+    display: none;
+    justify-content: center;
+    margin: auto;
+    width: 40%;
+    padding: 2.5px;
+    font-size: 18px;
+    color: whitesmoke;
+    background-color: red;
+    border-radius: 5px;
 }
 
 .weather-info-container {

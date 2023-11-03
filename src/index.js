@@ -6,11 +6,11 @@ const submitSearch = document.querySelector('#submit-search');
 submitSearch.addEventListener('click', async () => {
     try {
         const weatherData = await dataManager.getWeatherData();
-        const currentWeather = dataManager.getCurrentWeather(weatherData);
         if (!weatherData.error) {
+            const currentWeather = dataManager.getCurrentWeather(weatherData);
             domManager.displayWeather(currentWeather);
         }
     } catch (error) {
-        return;
+        return domManager.displayError();
     }
 });

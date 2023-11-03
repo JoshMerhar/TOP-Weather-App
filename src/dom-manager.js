@@ -8,7 +8,9 @@ export const domManager = (function () {
         const temperature = document.querySelector('#temperature');
         const wind = document.querySelector('#wind');
         const humidity = document.querySelector('#humidity');
+        const errorContainer = document.querySelector('.error-container');
 
+        errorContainer.style.display = 'none';
         weatherContainer.style.display = 'flex';
         location.textContent = currentWeather.location;
         conditions.textContent = 'Currently: ' + currentWeather.conditions;
@@ -18,5 +20,12 @@ export const domManager = (function () {
         humidity.textContent = 'Humidity: ' + currentWeather.humidity + '%';
     }
 
-    return {displayWeather};
+    function displayError() {
+        const weatherContainer = document.querySelector('.weather-info-container');
+        const errorContainer = document.querySelector('.error-container');
+        weatherContainer.style.display = 'none';
+        errorContainer.style.display = 'flex';
+    }
+
+    return {displayWeather, displayError};
 })();

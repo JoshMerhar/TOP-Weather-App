@@ -38,19 +38,34 @@ body {
 }
 
 .weather-info-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 24px;
+    width: fit-content;
+    padding: 20px;
+    margin: 25px auto;
+    border: 4px solid skyblue;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+#location {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .current-weather-container {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+    margin-top: 5px;
 }
 
 .conditions-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }

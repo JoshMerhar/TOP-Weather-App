@@ -11,12 +11,13 @@ export const dataManager = (function () {
             const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=5e7b9ca8a6b54f279dc03649232610&q=${searchField}`, {mode: "cors"});
             const weatherData = await response.json();
             if (weatherData.error) {
-                return alert('City not found. Are you sure that\'s a real place?');
+                console.log(error.response);
+                return;
             }
             return weatherData;
         } catch (error) {
-            console.log(error);
-            return alert('Something went wrong!');
+            console.log(error.response);
+            return alert('City not found. Are you sure that\'s a real place?');
         }
     }
 
